@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<!-- Modal JS -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <meta charset="utf-8" />
+        <title>VITeach</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="author" content="VITeach">
+	<meta name="keywords" content="VITeach, VITeach events, Alohomora, An Atypical Day, Of Grids and Matches, NEP Too Soon For It?, NEP, NEP 2020" />
+	<meta name="Alohomora" content="The event unlocked a fun interactive session where the wishes and agenda of VITeach was unveiled for the start of a new phase with the enrollment of a new batch.">
+	<meta name="An Atypical Day" content="As part of the World Autism Awareness Day, the session was conudcted to spread awareness about Autism and ADHD, and to promote inclusivity.">
+        <meta name="Of Grids & Matches" content="Who doesn't like Pictionary! The event started off with total chaos with each participant getting a quarter of a image. Participants were required to share clues about their picture and assemble the whole image within 20 minutes!">
+        <meta name="NEP : Too Soon For It?" content="Participants discuss and analyse the National Education Policy which aims at producing engaged, productive, and contributing citizens for building an equitable, inclusive, and plural society.">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS Libraries -->
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="https://drive.google.com/uc?export=view&id=1v5PjyMP7-Yvke5XRYLwezs9lbYC_udDo" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <!-- Loader CSS -->
+        <link href="css/loader.css" rel="stylesheet" />
+
+        <!-- Animation for Loader -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <!-- <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <i class="fa fa-phone-alt"></i>
+                                <p>+91 95660 09801</p>
+                            </div>
+                            <div class="text">
+                                <i class="fa fa-envelope"></i>
+                                <p>viteach.vitcc@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/VITeach"><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/viteachvitc/?hl=en"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"
+                    ><img class="logo-header" src="img/logo1.png"
+                /></a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbarCollapse"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse justify-content-between"
+                    id="navbarCollapse"
+                >
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="portfolio.html" class="nav-item nav-link">Gallery</a>
+                        <a href="tales_main.html" class="nav-item nav-link">Viteacher Tales</a>
+                        <a href="blog1.html" class="nav-item nav-link">Blogs</a>
+                        <!-- <a href="library.html" class="nav-item nav-link">Digital Library</a> -->
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Content</a>
+                            <div class="dropdown-menu">
+                                <a href="youtube.html" class="dropdown-item">Youtube</a>
+                                <a href="library.html" class="dropdown-item">Digital Library</a>
+                                <!-- <a href="#" onclick="checkTeam()" class="dropdown-item">Office Bearers</a> -->
+                                <a href="journal.html" class="dropdown-item">Journals</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a  href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Know Us</a>
+                            <div class="dropdown-menu">
+                                <a href="event.html" class="dropdown-item">Events</a>
+                        <a href="projects.html" class="dropdown-item">Projects</a>
+                        <a href="#" onclick="checkTeam()" class="dropdown-item">Office Bearers</a>
+                        <a href="ourstory.html" class="dropdown-item">Our Story</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav-item nav-link" id='contactScroll'>Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Events</h2>
+                    </div>
+                    <!--<div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">Events</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Upcoming Event Start -->
+      <!--  <div class="event">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Upcoming Events</h2>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="event-item">
+                        <img src="img/event-1.jpg" alt="Image">
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                                <p><i class="fa fa-map-marker-alt"></i>New York</p>
+                            </div>
+                            <div class="event-text">
+                                <h3>Lorem ipsum dolor sit</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn btn-custom" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                    <div class="event-item">
+                        <img src="img/event-2.jpg" alt="Image">
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                                <p><i class="fa fa-map-marker-alt"></i>New York</p>
+                            </div>
+                            <div class="event-text">
+                                <h3>Lorem ipsum dolor sit</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn btn-custom" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+        <!-- Upcoming Event End -->
+
+        <!-- Recent Event Start -->
+        <div class="event">
+            <div class="container">
+              <br>
+                <!--<div class="section-header text-center">
+                    <h2>Recent Events</h2>
+                </div>-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/escapeverse.jpg" alt="Into The Escape-Verse">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>7-June-2023</p>
+                                    <p><i class="far fa-clock"></i>10:00 AM - 5:30 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Into The Escape-Verse</h3>
+                                    <p style="text-align:justify;">
+                                        Escape the chaos, embrace the games. VITeach's: Into the Escape-Verse, where fun reigns!
+                                    </p>
+                                    <button class="btn btn-custom" onclick="showModal('Into The Escape-verse', 'A free event aimed at providing a refreshing escape, allowing participants to take a break from their hectic schedules and enjoy themselves, featuring four games of various genres. The Great Escape is an escape room that challenges participants to solve a series of interconnected puzzles within a time limit to retrieve a valuable item. The Whisper Challenge focused on participants\' lip-reading abilities and team coordination as they passed words from one person to another with the music turned up. Picto-Palooza tested players\' drawing and communication skills as they took turns drawing pictures representing words or phrases for their teammates to guess. Question Battle pitted two teams against each other, engaging in a rapid-fire series of cross-questioning. All in all, the day was filled with the magic of efforts from VITeach turning into life which attracted over 200 enthusiastic participants, making the event an astounding triumph!')">Read More</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img2.jpg" alt="VITaverse">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>16-February-2023</p>
+                                    <p><i class="far fa-clock"></i>10:00 AM - 5:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>VITaverse</h3>
+                                    <p style="text-align:justify;">
+                                        VITaverse: Where the boundaries of your reality dissolve, giving way to a new dimension where possibilities are boundless.
+                                    </p>
+                                    <button class="btn btn-custom" onclick="showModal('VITaverse', 'Our VITaverse event, unveiled a portal to an awe-inspiring new reality through the marvels of Virtual Reality technology. Participants were seamlessly transported into the vast Metaverse, a realm brimming with endless possibilities. Within this digital oasis, they were granted first-hand experiences of popular games like Fruit Ninja, Beat Saber, and many more, where the lines between fiction and reality were blurred, leaving participants mesmerized. VITaverse became the gateway for individuals to explore and embrace a new dimension of interactive entertainment.')">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img3.jpg" alt="Vibrance Expo">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>15-February-2023</p>
+                                    <p><i class="far fa-clock"></i>3:00 - 6:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Vibrance Expo</h3>
+                                    <p style="text-align:justify;">
+                                        VITeach's Inspiring Journey at Vibrance Expo: Igniting Minds, Empowering Futures!
+                                    </p>
+                                    <button class="btn btn-custom" onclick="showModal('Vibrance Expo', 'VITeach\'s stall at the Vibrance Expo was an immersive experience for all education enthusiasts. We proudly showcased our club\'s work and impact through vibrant charts and captivating pictures, capturing moments of joy while teaching school kids. Our model classroom provided a glimpse into our innovative teaching methods, fostering a passion for learning. The book-themed photobooth added an element of fun, and with education-themed props, attendees captured memorable snapshots. VITeach\'s stall was a testament to our commitment to inspiring, empowering, and transforming education, leaving a lasting impression on all who visited. Additionally, we gave a sneak peek into our pre-vibrance event - VITaverse!')">Read More</button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img4.png" alt="Motivational Speech Event">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>14-February-2023</p>
+                                    <p><i class="far fa-clock"></i>2:00 - 4:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Motivational Speech Event</h3>
+                                    <p style="text-align:justify;">
+                                        VITeach inspires students at Panchayat Union School, Nallambakkam, with stress management tips and engaging activities, fostering a positive learning environment.
+                                    </p>
+                                    <button class="btn btn-custom" onclick="showModal('Motivational Speech Event', 'VITeachers visited the Panchayat Union school in Nallambakkam on February 14, 2022, for a Motivational Speech Event, to teach the middle school students how to handle stress during exams and motivate them. We had 5 juniors from VITeach volunteering for the event along with the OBs. We had an interactive session with the children and taught them how to manage time and give importance to studies as well as other extracurricular activities. We then grouped the children into teams and played games that were fun as well as educational. We wrapped up the event with a discussion about the kids\' take away from the session.')">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img5.jpg" alt="Pongal Celebration with Stationery Distribution">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>12-January-2023</p>
+                                    <p><i class="far fa-clock"></i>10:00 AM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Pongal Celebration with Stationery Distribution</h3>
+                                    <p style="text-align:justify;">
+                                        VITeach celebrates Pongal at Panchayat Union School, sharing joy and knowledge with stationery and prizes.
+                                    </p>
+                                    <button class="btn btn-custom" onclick="showModal('Pongal Celebration with Stationery Distribution', 'A team of VITeach club coordinators, volunteers, and Faculty Coordinator Dr. Manivannan A celebrated the \'Pongal Thiruvizha\' by going to the Panchayat Union school in Nallambakkam. They distributed the stationery items collected during the Stationery Drive conducted by VITeach to the students of the school.The team interacted with the children and gifted them special prizes after conducting a short QnA session. Thus, the significance of Pongal was showcased, and its beauty was appreciated by all.')">Read More</button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img6.png" alt="Stationery Drive">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>14-23 September-2022</p>
+                                    <p><i class="far fa-clock"></i>10:00 AM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Stationery Drive</h3>
+                                    <p style="text-align:justify;">
+                                        VITeach's 'Stationery Drive' collected unused items, fostering community support for underprivileged children—a heartfelt initiative embodying their spirit of giving back.
+                                    </p>
+                                    <button class="btn btn-custom" onclick="showModal('Stationery Drive', '\'There is no better exercise for your heart than reaching down and helping to lift someone up.\' - Bernard Meltzer. VITeach as a club solemnly follows this motto. \'Stationery Drive\' in collaboration with BandVIT as a pre-TechnoVIT event (14th Sept - 23rd Sept) was one such step towards this. Unused stationery items were collected by the VITeachers and lots of students and professors from all over the university actively contributed to this drive for a good cause. The collections were then donated to underprivileged children.')">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img7.png" alt="Querencia 2.0">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>25-August-2022</p>
+                                    <p><i class="far fa-clock"></i>4:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                    
+                                </div>
+                                <div class="event-text">
+                                    <h3>Querecia 2.0</h3>
+                                    <p style="text-align:justify;">
+                                        'Querencia 2.0', the offline orientation program for the Academic Year 2022-23, was held on the 25th of August. The program focused on explaining everything about VITeach.
+                                    </p>
+                                    <button class="btn btn-custom" onclick="showModal('Querencia 2.0',
+                                    'Querencia 2.0, the offline orientation program for the Academic Year 2022-23, was held on the 25th of August.The program focused on introducing our club and its departments, and highlighted its past and present activities. Each Office Bearer provided a glimpse into their respective departments. Our Faculty coordinator, Sathiya sir, gave us a better understanding on how the club works. Finally, there was a performance by two VITeachers.'
+                                    )">Read More</button>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img88.png" alt="Har Ghar Tiranga">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>11-Aug-22</p>
+                                    <p><i class="far fa-clock"></i>1:30 PM - 3:30 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Har Ghar Tiranga</h3>
+                                    <p style="text-align:justify;">
+                                        To commemorate the 75th year of Indian Independence, VITeachers went to Adi Dravidar Welfare (ADW) middle school on the 11th of August 2022 to educate the students about the significance of Independence Day and the National Flag.</p>
+                                    <button class="btn btn-custom" onClick="showModal('Har Ghar Tiranga',
+                                    'To commemorate the 75th year of Indian Independence, we at VITeach went to Adi Dravidar Welfare (ADW) middle school on the 11th of August 2022, and educated the students about the significance of Independence Day, the struggle for freedom, Har Ghar Tiranga and Azadi ka Amrit Mahotsav in a fun and interactive session. They were also taught about the Indian flag code, with chocolates and national flags being distributed at the end!'
+                                    )">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img9.jpg" alt="Querencia">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>09-March-22</p>
+                                    <p><i class="far fa-clock"></i>06:30 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Online</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Querencia</h3>
+                                    <p style="text-align:justify;">
+                                        The event unlocked an interactive session where the wishes and agenda of VITeach was unveiled for the start of a new phase with the enrollment of a new batch.
+                                    </p>
+                                    <button class="btn btn-custom" onClick="showModal('Querencia',
+                                    'The event was conducted to introduce VITeach to the newly enrolled batch of 2025, prior to their FFCS extra-curricular registrations. A summary was given about the functioning of the club along with a brief explanation about all the various teams namely, the School team, Research & Resource team, Marketing & Sponsorship team, and Content & Design team. Using visual aids, the club’s activities were also presented to the audience. With an active participation of as many as 153 people, the introductory speeches by the Junior Core Committee members were followed by an interactive Q&amp;A session in which the faculty coordinator and the office bearers shared their experiences within the club.'
+                                    )">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img10.jpg" alt="Kidtopia">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>05-March-22</p>
+                                    <p><i class="far fa-clock"></i>05:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Online</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Kidtopia</h3>
+                                    <p>
+                                          A fun-filled event was conducted for the children of professors belonging to VITC, in which the kids were engaged in learning simple scientific concepts but with a twist.
+                                    </p>
+                                    <button class="btn btn-custom" onClick="showModal('Kidtopia',
+                                    'Simple scientific concepts were taught to students in a fun-way. They were asked to perform interesting activities by which they could learn as well as have fun at the same time.The event started off with a small game to serve as an ice-breaker for the kids.Then they were asked to perform a few simple yet engrpssing science experiments like ``Water,candle and glass``,``Oil in water``, ``Lava in a cup``, ``Self inflating balloon`` and many more to aid them in learning those concepts.'
+                                    )">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img11.jpg" alt="Online Python Sessions">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>Weekly</p>
+                                    <p><i class="far fa-clock"></i>4:00 PM to 5:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Online</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Online Python Sessions</h3>
+                                    <p style="text-align:justify;">
+                                        'Learn Python' is a  weekly python learning programme that is held for school children who have minimal access to resources, in order to equip them with basic programming skills in python.
+                                    </p><br>
+                                    <button class="btn btn-custom" onClick="showModal('Online Python Sessions',
+                                    'Viteach started ``Learn Python`` in a bid to teach school children with minimal access to resources, a very import technical skill-Python. With weekly classes with a detailed framework to make the learning process easy, the students are also given homework problems to test their knowledge. More so, every session ends with a quiz, to gauge how well students have understood the concept for the week.'
+                                    )">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="Event Images/img12.jpg" alt="NEP Too Soon For It?">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>05-Feb-22</p>
+                                    <p><i class="far fa-clock"></i>4:00 PM</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Offline</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Sneham Bridge Foundation</h3>
+                                    <p style="text-align:justify;">
+                                        Sneham Bridge Project is a collaboration between VITeach and the Sneham Foundation, and it primarily focuses on providing basic education to underprivileged kids.
+                                      </p><br><br><br>
+                                    <button class="btn btn-custom" onClick="showModal('Sneham Bridge Foundation',
+                                    'The Sneham Foundation is a registered non-governmental organization that works towards the betterment of the society.VITeach volunteers teamed up with the volunteers from Sneham Foundation to teach underprivileged kids the basics they need to have as students.'
+                                    )">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event-1.jpg" alt="Image">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                    <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>New York</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                    </p>
+                                    <a class="btn btn-custom" href="">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event-2.jpg" alt="Image">
+                            <div class="event-content">
+                                <div class="event-meta">
+                                    <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                    <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>New York</p>
+                                </div>
+                                <div class="event-text">
+                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                    </p>
+                                    <a class="btn btn-custom" href="">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                  
+                                <div class="row">   
+                                    <div class="col-lg-6">
+                                        <div class="event-item">
+                                            <img src="Event Images/img14.jpg" alt="Family Feud">
+                                            <div class="event-content">
+                                                <div class="event-meta">
+                                                    <p><i class="fa fa-calendar-alt"></i>06-Apr-20</p>
+                                                    <p><i class="far fa-clock"></i>11:45 AM - 01:30 PM</p>
+                                                    <p><i class="fa fa-map-marker-alt"></i>Offline AB1-501</p>
+                                                </div>
+                                                <div class="event-text">
+                                                    <h3>Family Feud</h3>
+                                                    <p>
+                                                        A fun event that was conducted to relax a little after the stressful exam week.
+                                                        Participants were supposed to form teams and play this interactive game.           
+                                                    </p><br>
+                                                    <button class="btn btn-custom" onClick="showModal('Family Feud', 'An interactive game played to chase away the exam week blues. It saw participants turn up in spades and spend a solid hour playing the fun game. It was difficult to deicde the winner, who was declared after a face-off.')">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="event-item">
+                                            <img src="Event Images/img13.jpg" alt="Treasure_hunt">
+                                            <div class="event-content">
+                                                <div class="event-meta">
+                                                    <p><i class="fa fa-calendar-alt"></i>10-Apr-22</p>
+                                                    <p><i class="far fa-clock"></i>03:30 PM - 06:00 PM </p>
+                                                    <p><i class="fa fa-map-marker-alt"></i>Offline MBA Amphitheatre</p>
+                                                </div>
+                                                <div class="event-text">
+                                                    <h3>Treasure Hunt</h3>
+                                    <p>
+                                        An exciting event where the participants put on their adventure caps and started their quest of finding the treasure by following the clues .
+                                    </p>
+                                    <button class="btn btn-custom" onClick="showModal('Treasure Hunt', 'A team in this event consisted of 3-5 participants. Each team were supposed to find five locations using the hidden clues. VITeach Volunteers were then assigned to each team. After finding a clue, the team had to send a selfie of all the team members stading in front of the location landmarks to the volunteer. Participants were not allowed to search for clues inside hostels.')">Read More</button>
+                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">   
+                                    <div class="col-lg-6">
+                                        <div class="event-item">
+                                            <img src="Event Images/img15.jpg" alt="Debate">
+                                            <div class="event-content">
+                                                <div class="event-meta">
+                                                    <p><i class="fa fa-calendar-alt"></i>20-Apr-22</p>
+                                                    <p><i class="far fa-clock"></i>12:30 PM - 02:00 PM</p>
+                                                    <p><i class="fa fa-map-marker-alt"></i>Offline AB1-401</p>
+                                                </div>
+                                                <div class="event-text">
+                                                    <h3>Debate - Online vs Offline</h3>
+                                                    <p>
+                                                        An inquisitive event ONLINE VS OFFLINE was held to encourage students to come forward and discuss about the pros and cons of Online and Offline classes.  
+                                                    </p>
+                                                    <button class="btn btn-custom" onClick="showModal('Debate', 'Participants were divided into two teams-one supporting online and the other supporting offline education. Each team was given around 10 minutes to write down the flaws in the mode of education of which they were against. Teams were then asked to speak out the flaws of the opposing team, and the other team was given a chance to defend them. At the end, teams were asked to provide solution to the particular category of flaw that they have taken. The event concluded with both the teams sticking to their opinions.')">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="event-item">
+                                            <img src="Event Images/img16.png" alt="NEP Too Soon For It?">
+                                            <div class="event-content">
+                                                <div class="event-meta">
+                                                    <p><i class="fa fa-calendar-alt"></i>27-Nov-21</p>
+                                                    <p><i class="far fa-clock"></i>6:00 PM</p>
+                                                    <p><i class="fa fa-map-marker-alt"></i>Online</p>
+                                                </div>
+                                                <div class="event-text">
+                                                    <h3>Quizpedia</h3><br>
+                                                    <p style="text-align:justify;">
+                                                        Quizpedia was an event that was conducted by VITeach. It was a fun quiz and was really liked by most of the students and thus proved to be a fun-filled team building session.</p>
+                                                    <br><br><button class="btn btn-custom" onClick="showModal('Quizpedia',
+                                                    'It was a fun-filled and interactive quiz that was conducted on Kahoot platform. The quiz consisted of 3 rounds. The questions that were asked were mostly based on cartoons, movies, and TV series.It proved to be a fun team-building session.'
+                                                    )">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+					
+                                </div>
+                
+
+                                
+                        </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <!-- Upcoming Event End -->
+        
+        <script>
+			function showModal(title, content){
+				swal(title, content,{button:"Close"});
+			};
+		</script>
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container" style="padding-left: 30px;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer-contact">
+                            <a name="contactus"><h2>Contact Us</h2></a>
+                            <p>
+                                <a class = "footer-link" href="https://www.google.com/maps/dir//vit+chennai/@12.8406317,80.0833878,12z/data=!3m1!4b1!4m9!4m8!1m1!4e2!1m5!1m1!1s0x3a5259af8e491f67:0x944b42131b757d2d!2m2!1d80.1534283!2d12.840641" target="_blank"><i class="fa fa-map-marker-alt"></i>Vellore
+                                Institute of Technology, Chennai</a>
+                            </p>
+                            <p class="d-block d-xs-block d-sm-block d-md-block d-lg-none">
+                                <a class = "footer-link" href = "tel:+919566009801"><i class="fa fa-phone-alt"></i>+91 95660 09801</a>
+                            </p>
+                            <p class="d-none d-lg-block d-xl-block">
+                                <i class="fa fa-phone-alt"></i>+91 95660 09801
+                            </p>
+                            <p>
+                                <a href="mailto:viteach.vitcc@gmail.com" class="footer-link"><i class="fa fa-envelope"></i
+                                >viteach.vitcc@gmail.com</a>
+                            </p>
+                            <div class="footer-social">
+                                <a
+                                    class="btn btn-custom"
+                                    href="https://www.facebook.com/VITeach"
+                                     target="_blank"><i class="fab fa-facebook-f"></i
+                                ></a>
+                                <a
+                                    class="btn btn-custom"
+                                    href="https://www.youtube.com/channel/UCUpFUMYtnH_sl-zzunOWd4g"
+                                     target="_blank"><i class="fab fa-youtube"></i
+                                ></a>
+                                <a
+                                    class="btn btn-custom"
+                                    href="https://www.instagram.com/viteachvitc/?hl=en"
+                                     target="_blank"><i class="fab fa-instagram"></i
+                                ></a>
+                                <a
+                                    class="btn btn-custom"
+                                    href="https://in.linkedin.com/company/viteachvitcc"
+                                     target="_blank"><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer-link">
+                            <h2>Other Sections</h2>
+                            <a href="event.html">Events</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="#" onclick="checkTeam()">Office Bearers</a>
+                        <a href="ourstory.html">Our Story</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2>Useful Links</h2>
+                            <a href="">Terms of use</a>
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div> -->
+                    <div class="col-sm-4" >
+                        <div class="footer-newsletter">
+                            <h2>Get in touch!</h2>
+                            <form id ='f' name ='f' data-netlify="true" method="post">
+                                <input id='t' name='t' type="text"
+                                    class="form-control"
+                                    placeholder="Drop your email"
+                                />
+                                <button type="submit" class="btn btn-custom">Submit</button>
+                                <center><label style='padding-top:2%;'>We'll respond at the earliest.</label></center>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            &copy; <a href="#">VITeach</a>, All Right Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Designed By <a href="#">VITeach</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- Pre Loader
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div> -->
+        <script type="text/javascript">
+            function checkTeam(){
+                var isMobile = {
+                    Android: function() {
+                        return navigator.userAgent.match(/Android/i);
+                    },
+                    BlackBerry: function() {
+                        return navigator.userAgent.match(/BlackBerry/i);
+                    },
+                    iOS: function() {
+                        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                    },
+                    Opera: function() {
+                        return navigator.userAgent.match(/Opera Mini/i);
+                    },
+                    Windows: function() {
+                        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+                    },
+                    any: function() {
+                        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                    }
+                };
+                if( isMobile.any() ) 
+                    window.location.href = "./mteam.html";
+                else
+                    window.location.href="./team.html";
+            }
+        </script>
+        <!--<script type="text/javascript">
+			function validateEmail(email) {
+			  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			  return re.test(email);
+			}
+            function sendEmail(){
+                var e = document.f.t.value;
+				if(validateEmail(e)){
+					Email.send({
+						Host : "smtp.gmail.com",
+						Username : "",
+						Password : "enter password here",
+						To : '',
+						From : "",
+						Subject : " New from Contact US ",
+						Body : "Email : "+e
+					}).then(
+					message => {
+						if(message=='OK'){
+						alert("Email has been sent! We will get back to you shortly");
+					}
+					else{
+						alert("Please try again.");
+					}
+                }
+                );
+				}
+				else{
+					alert("Please enter valid e-mail address");
+				}
+			}
+        </script>-->
+
+        <script type="text/javascript">
+        var gallery = document.querySelector('#gallery');
+        var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+        var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+        var resizeAll = function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+                var el = item;
+                el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+            });
+        };
+        gallery.querySelectorAll('img').forEach(function (item) {
+            item.classList.add('byebye');
+            if (item.complete) {
+                console.log(item.src);
+            }
+            else {
+                item.addEventListener('load', function () {
+                    var altura = getVal(gallery, 'grid-auto-rows');
+                    var gap = getVal(gallery, 'grid-row-gap');
+                    var gitem = item.parentElement.parentElement;
+                    gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / ((altura + gap)));
+                    item.classList.remove('byebye');
+                });
+            }
+        });
+        window.addEventListener('resize', resizeAll);
+        // gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        //     item.addEventListener('click', function () {
+        //         item.classList.toggle('full');
+        //     });
+        // });
+
+        </script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+         <!-- Loader js -->
+        <script src="js/loader.js"></script>
+    </body>
+</html>
